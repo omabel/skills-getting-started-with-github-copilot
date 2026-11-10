@@ -90,13 +90,42 @@ section h3 {
 }
 
 .participants ul {
-  padding-left: 20px;
+  padding-left: 0;
   color: #424a66;
+  list-style: none;
 }
 
 .participants li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
   padding: 2px 0;
   overflow-wrap: anywhere;
+}
+
+.participant-remove {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background: transparent;
+  color: #c62828;
+}
+
+.participant-remove:hover {
+  background-color: #ffebee;
+}
+
+.participant-remove svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
 }
 
 .participants .participants-empty {
